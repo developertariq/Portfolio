@@ -25,7 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px;
+  margin: 0;
 }
 
 #utilities {
@@ -41,7 +41,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px;
+  margin: 0;
   padding: 0 10px;
 }
 
@@ -59,7 +59,6 @@ header {
   background-position: right, bottom;
   width: 375px;
   height: 590px;
-  padding-left: 20px;
   margin: 0 auto;
   padding: 50px 12px;
 }
