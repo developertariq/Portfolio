@@ -1,9 +1,15 @@
 
 body {
   background-color: #1c1a19;
+  background-image: url(./images/Illustration.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-size: 50%;
   color: #fff;
   font-family: sans-serif, Helvetica;
   max-width: 375px;
+  margin-bottom: 0;
 }
 
 header {
