@@ -4,7 +4,6 @@
 }
 
 body {
-  background-color: #1c1a19;
   color: #fff;
   font-family: sans-serif, Helvetica;
   margin: 0 auto;
@@ -54,6 +53,7 @@ header {
 }
 
 #welcome {
+  background-color: #1c1a19;
   background-image: url(./images/Illustration.svg);
   background-repeat: no-repeat;
   background-position: right, bottom;
