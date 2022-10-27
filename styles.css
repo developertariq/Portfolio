@@ -5,105 +5,78 @@
 
 body {
   background-color: #1c1a19;
-  background-image: url(./images/Illustration.svg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right bottom;
-  background-size: 180px;
   color: #fff;
   font-family: sans-serif, Helvetica;
-  width: 375px;
-  height: 650px;
+  margin: 0 auto;
 }
 
 header {
-  width: 100%;
-  height: 80px;
   background-color: #3e3c3c;
+  display: block;
+  width: 375px;
+  height: 90px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+#time-utility {
+  width: 100%;
+  height: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
+  margin: 0px;
 }
 
-#person-name {
-  width: 100%;
-  margin-left: 15px;
-  padding: 10px;
-}
-
-#menu-icon {
-  float: right;
-  width: 40px;
-  height: 40px;
-  margin-right: 15px;
-  padding: 10px;
-}
-
-main {
-  margin-top: 100px;
-  display: inline-block;
-  justify-content: center;
+#utilities {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 10px;
+}
+
+#name-menu {
   width: 100%;
-  height: 90%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0 10px;
+}
+
+#name-menu > h4 {
+  margin-left: 15px;
+}
+
+#name-menu img {
+  float: right;
+}
+
+#welcome {
+  background-image: url(./images/Illustration.svg);
+  background-repeat: no-repeat;
+  background-position: right, bottom;
+  width: 375px;
+  height: 590px;
   padding-left: 20px;
+  margin: 0 auto;
+  padding: 50px 12px;
 }
 
-.welcome {
-  width: 100%;
+#welcome h1 {
   color: orangered;
-  font-size: 2.75em;
-  margin: 0;
-  padding: 0;
-}
-
-main h2 {
-  font-size: 1.65em;
-}
-
-main p {
-  font-size: 1.25em;
 }
 
 #social-media {
-  display: flex;
-  justify-content: left;
-  align-items: center;
   width: 100%;
+  display: flex;
+  align-items: center;
   height: 50px;
-  margin: 0;
+  padding-inline-start: 0;
 }
 
 #social-media > li {
   display: block;
   padding-right: 10px;
-  margin: 0;
-}
-
-.social-media-icon {
-  width: 24px;
-  height: 24px;
-}
-
-@media (max-width: 380px) {
-  body {
-    width: 375px;
-  }
-
-  main {
-    height: 90%;
-  }
-}
-
-@media (max-width: 1199px) and (min-width: 380px) {
-  body {
-    width: 375px;
-  }
-
-  main {
-    height: 90%;
-  }
 }
