@@ -5,4 +5,31 @@ This project is about building a Portfolio using the mobile-first approach. This
 
 ## Build with
 
-- HTML & CSS
+- HTML
+- CSS
+
+## Live Demo
+https://github.com/developertariq/Portfolio
+
+## Getting Started
+
+### Prerequisites
+### Setup
+### Install
+### Usage
+### Deployment
+
+## Authors
+
+#### Md Tariq-ul Islam
+- GitHub: 
+- LinkedIn:
+- Twitter:
+
+## Contributing
+
+## Show your support
+
+## Acknowledgments
+
+## License
