@@ -1,1 +1,34 @@
 
+body {
+  background-color: #1c1a19;
+  color: #fff;
+  font-family: sans-serif, Helvetica;
+  max-width: 375px;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #3e3c3c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#person-name {
+  width: 100%;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+#menu-icon {
+  float: right;
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  padding: 10px;
+}
+
