@@ -9,23 +9,19 @@ body {
   margin: 0 auto;
 }
 
-header {
-  background-color: #3e3c3c;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 375px;
-  height: 90px;
+#home-screen {
+  max-width: 375px;
+  height: 680px;
   margin: 0 auto;
-  padding: 5px;
 }
 
 #navbar {
   width: 100%;
-  height: 100%;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #3e3c3c;
   margin: 0;
   padding: 0 10px;
 }
@@ -40,9 +36,8 @@ header {
   background-image: url(./images/Illustration.svg);
   background-repeat: no-repeat;
   background-position: right, bottom;
-  width: 375px;
+  width: 100%;
   height: 590px;
-  margin: 0 auto;
   padding: 50px 12px;
 }
 
@@ -62,3 +57,97 @@ header {
   display: block;
   padding-right: 10px;
 }
+
+main {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  color: black;
+}
+
+#work-heading {
+  border: 0;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+#work-heading > label {
+  font-size: 30px;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.works {
+  display: grid;
+  grid-template-rows: 300px 50px 30px 150px 50px 50px;
+  background-color: #fff;
+  height: 680px;
+  gap: 10px;
+  margin: 30px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.work {
+  display: block;
+}
+
+.snapshot {
+  background-color: rgb(255, 107, 70);
+  object-fit: fill;
+  padding: 20px;
+  margin: 0;
+}
+
+.snapshot > img {
+  width: 295px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+.project-summary {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 5px;
+  padding-inline-start: 0;
+  text-indent: -10px;
+  list-style-position: inside;
+  margin: 10px 0;
+}
+
+.project-summary li:first-child{
+  list-style-type: none;
+}
+
+.project-summary li{
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.languages > label {
+  border: 1px solid black;
+  align-self: center;
+  text-align: center;
+  padding: 5px;
+  font-size: 12.5px;
+  border-radius: 5px;
+}
+
+.see-project {
+  background-color: rgb(172, 175, 172);
+  font-weight: bold;
+  width: 40%;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration-line: none;
+  padding: 10px;
+  color: #fff;
+}
+
