@@ -5,29 +5,31 @@
 
 body {
   color: #fff;
-  font-family: sans-serif, Helvetica;
+  font-family: 'Crete Round', 'Inter', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0 auto;
+  background-color: rgb(241, 245, 244);
 }
 
-header {
-  background-color: #3e3c3c;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 375px;
-  height: 90px;
+#home-screen {
+  max-width: 375px;
   margin: 0 auto;
-  padding: 5px;
+  height: 680px;
+  background-color: #1c1a19;
 }
 
 #navbar {
   width: 100%;
-  height: 100%;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #3e3c3c;
   margin: 0;
   padding: 0 10px;
+}
+
+a:hover {
+  background-color: rgb(189, 50, 0);
 }
 
 #navbar > a {
@@ -35,19 +37,40 @@ header {
   color: #fff;
 }
 
+#about-me > a {
+  text-decoration-line: none;
+  color: #fff;
+  margin-top: -160px;
+  background-color: orangered;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  font-size: 22.5px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+#navbar > a:hover {
+  background-color: rgb(189, 50, 0);
+}
+
 #welcome {
-  background-color: #1c1a19;
   background-image: url(./images/Illustration.svg);
   background-repeat: no-repeat;
   background-position: right, bottom;
-  width: 375px;
+  width: 100%;
   height: 590px;
-  margin: 0 auto;
-  padding: 50px 12px;
+  padding: 20px;
 }
 
-#welcome h1 {
+h1 {
   color: orangered;
+  font-weight: 400;
+  font-size: 45px;
+}
+
+#welcome > h4 {
+  margin-top: -20px;
 }
 
 #social-media {
@@ -58,7 +81,130 @@ header {
   padding-inline-start: 0;
 }
 
+#main-works {
+  display: grid;
+  grid-template-rows: 160px 680px 680px 680px 680px;
+  gap: 10px;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: black;
+  padding: 100px 20px;
+  place-items: center;
+}
+
+h2 {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+#heading {
+  border-bottom: 1px solid grey;
+}
+
+.works {
+  display: block;
+  max-width: 335px;
+  height: 680px;
+  margin: 0 auto;
+}
+
+.picture {
+  background-color: rgb(255, 107, 70);
+  object-fit: fill;
+  padding: 20px;
+  margin: 0;
+}
+
+.picture > img {
+  width: 295px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.proj-lang {
+  display: flex;
+  margin-bottom: 20px;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.proj-lang > li {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid rgb(61, 55, 151);
+}
+
+.card-link {
+  background-color: orangered;
+  font-weight: bold;
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  text-decoration-line: none;
+  padding: 10px;
+  color: #fff;
+}
+
+#about-me {
+  display: flexbox;
+  max-width: 375px;
+  height: 2000px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  background-color: black;
+}
+
+#about-me > h2 {
+  color: orangered;
+}
+
+#about-me > a:hover {
+  background-color: rgb(189, 50, 0);
+}
+
+#about-me-picture {
+  float: right;
+  padding: 10px;
+}
+
+#skills {
+  border-top: 1px solid grey;
+  clear: both;
+  padding-top: 120px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#skills > ul {
+  list-style-position: inside;
+  font-size: 35px;
+  float: left;
+}
+
+.skill > li {
+  padding: 20px 0;
+}
+
 #social-media > li {
   display: block;
   padding-right: 10px;
+}
+
+#skills > ul > li {
+  padding: 20px 0;
+  list-style-image: linear-gradient(to right, orangered, orangered);
+}
+
+.skill {
+  list-style: none;
+  font-size: 22px;
 }
