@@ -28,9 +28,30 @@ body {
   padding: 0 10px;
 }
 
+a:hover {
+  background-color: rgb(189, 50, 0);
+}
+
 #navbar > a {
   text-decoration-line: none;
   color: #fff;
+}
+
+#about-me > a {
+  text-decoration-line: none;
+  color: #fff;
+  margin-top: -160px;
+  background-color: orangered;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  font-size: 22.5px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+#navbar > a:hover {
+  background-color: rgb(189, 50, 0);
 }
 
 #welcome {
@@ -123,7 +144,7 @@ h3 {
 }
 
 .card-link {
-  background-color: rgb(189, 50, 0);
+  background-color: orangered;
   font-weight: bold;
   width: 50%;
   height: 40px;
@@ -131,10 +152,6 @@ h3 {
   text-decoration-line: none;
   padding: 10px;
   color: #fff;
-}
-
-a.visitem {
-  background-color: rgb(94, 45, 27);
 }
 
 #about-me {
@@ -150,17 +167,8 @@ a.visitem {
   color: orangered;
 }
 
-#about-me > a {
-  text-decoration-line: none;
-  color: #fff;
-  margin-top: -160px;
-  background-color: orangered;
-  width: 200px;
-  height: 45px;
-  text-align: center;
-  font-size: 22.5px;
-  font-weight: bold;
-  padding: 8px;
+#about-me > a:hover {
+  background-color: rgb(189, 50, 0);
 }
 
 #about-me-picture {
