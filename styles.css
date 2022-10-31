@@ -131,7 +131,7 @@ h3 {
 }
 
 .proj-lang {
-  display: flex;
+  /* display: flex; */
   margin-bottom: 20px;
   padding-inline-start: 0;
   list-style: none;
@@ -207,4 +207,8 @@ h3 {
 .skill {
   list-style: none;
   font-size: 22px;
+}
+
+.lang {
+  float: left;
 }
