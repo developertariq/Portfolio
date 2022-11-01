@@ -12,7 +12,7 @@ body {
 
 #home-screen {
   max-width: 375px;
-  margin: 0 auto; 
+  margin: 0 auto;
   height: 600px;
   background-color: #1c1a19;
 }
@@ -35,6 +35,18 @@ a:hover {
 #navbar > a {
   text-decoration-line: none;
   color: #fff;
+}
+
+#resume > a {
+  text-decoration-line: none;
+  color: #fff;
+  background-color: #ff4500;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-size: 19.5px;
+  font-weight: bold;
+  padding: 8px;
 }
 
 #navbar > a:hover {
@@ -69,6 +81,16 @@ h1 {
   list-style: none;
 }
 
+.proj-lang > li {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #3d3797;
+}
+
+ul.skill > li {
+  padding: 15px;
+}
+
 #social-media > li {
   padding-right: 10px;
 }
@@ -94,7 +116,7 @@ h2 {
 }
 
 #heading {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #888;
   height: 100px;
   padding-bottom: 60px;
 }
@@ -137,12 +159,6 @@ h3 {
   list-style: none;
 }
 
-.proj-lang > li {
-  margin-right: 10px;
-  padding: 10px;
-  border: 1px solid #3d3797;
-}
-
 .card-link {
   background-color: #ff4500;
   font-weight: bold;
@@ -181,24 +197,12 @@ h3 {
   height: 120px;
 }
 
-#resume > a {
-  text-decoration-line: none;
-  color: #fff;
-  background-color: #ff4500;
-  width: 200px;
-  height: 40px;
-  text-align: center;
-  font-size: 19.5px;
-  font-weight: bold;
-  padding: 8px;
-}
-
 #resume > a:hover {
   background-color: #bd3200;
 }
 
 #skills {
-  border-top: 1px solid grey;
+  border-top: 1px solid #888;
   padding-top: 120px;
   clear: both;
   text-align: center;
@@ -220,13 +224,9 @@ ul.skill {
   font-size: 22px;
 }
 
-ul.skill > li {
-  padding: 15px;
-}
-
 .contact-form {
   width: 375px;
-  height: 680px;
+  height: 730px;
   padding: 20px;
   margin: 0 auto;
   display: flex;
@@ -245,7 +245,7 @@ ul.skill > li {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 fieldset {
@@ -264,21 +264,19 @@ fieldset {
   padding: 5px;
   margin-bottom: 1rem;
   margin-left: 0;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;  
+  font-size: 15px;
 }
 
 .form-msg {
   width: 100%;
   height: 114px;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #3C3A39;
+  color: #3c3a39;
   text-align: left;
   margin-bottom: 1rem;
   margin-left: 0;
@@ -310,7 +308,7 @@ fieldset {
   height: 50px;
   list-style: none;
   padding-inline-start: 0;
-  border-top: 1px solid grey;
+  border-top: 1px solid #888;
   padding-top: 20px;
 }
 
