@@ -12,7 +12,7 @@ body {
 
 #home-screen {
   max-width: 375px;
-  margin: 0 auto; 
+  margin: 0 auto;
   height: 600px;
   background-color: #1c1a19;
 }
@@ -35,6 +35,18 @@ a:hover {
 #navbar > a {
   text-decoration-line: none;
   color: #fff;
+}
+
+#resume > a {
+  text-decoration-line: none;
+  color: #fff;
+  background-color: #ff4500;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-size: 19.5px;
+  font-weight: bold;
+  padding: 8px;
 }
 
 #navbar > a:hover {
@@ -69,6 +81,16 @@ h1 {
   list-style: none;
 }
 
+.proj-lang > li {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #3d3797;
+}
+
+ul.skill > li {
+  padding: 15px;
+}
+
 #social-media > li {
   padding-right: 10px;
 }
@@ -94,7 +116,7 @@ h2 {
 }
 
 #heading {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #888;
   height: 100px;
   padding-bottom: 60px;
 }
@@ -137,12 +159,6 @@ h3 {
   list-style: none;
 }
 
-.proj-lang > li {
-  margin-right: 10px;
-  padding: 10px;
-  border: 1px solid #3d3797;
-}
-
 .card-link {
   background-color: #ff4500;
   font-weight: bold;
@@ -181,24 +197,12 @@ h3 {
   height: 120px;
 }
 
-#resume > a {
-  text-decoration-line: none;
-  color: #fff;
-  background-color: #ff4500;
-  width: 200px;
-  height: 40px;
-  text-align: center;
-  font-size: 19.5px;
-  font-weight: bold;
-  padding: 8px;
-}
-
 #resume > a:hover {
   background-color: #bd3200;
 }
 
 #skills {
-  border-top: 1px solid grey;
+  border-top: 1px solid #888;
   padding-top: 120px;
   clear: both;
   text-align: center;
@@ -220,20 +224,94 @@ ul.skill {
   font-size: 22px;
 }
 
-ul.skill > li {
-  padding: 15px;
+.contact-form {
+  width: 375px;
+  padding: 70px 20px 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
 }
 
-/*
-ul.prog-lang {
-  list-style-image: linear-gradient(to right, orangered, orangered);
+#contact-para {
+  width: 100%;
+  height: auto;
+  font-family: sans-serif;
+  text-align: center;
+  color: #172b4d;
 }
 
-ul.prog-fram {  
-  list-style-image: linear-gradient(to right, orangered, orangered);
+form {
+  width: 100%;
 }
 
-ul.prog-skil{
-  list-style-image: linear-gradient(to right, orangered, orangered);
+fieldset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 0;
+  padding: 0;
 }
-*/
+
+#name,
+#email {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #888;
+}
+
+.form-msg {
+  width: 100%;
+  height: 114px;
+  text-align: left;
+  margin: 15px 0 30px;
+  padding: 5px;
+  border: none;
+  background-color: #fbf8f7;
+}
+
+#submit {
+  background-color: #ff4500;
+  font-weight: bold;
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  text-decoration-line: none;
+  padding: 10px;
+  color: #fff;
+  margin: 0 auto;
+  border: 0;
+}
+
+#submit:hover {
+  background-color: #bd3200;
+}
+
+#contact-social-media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  list-style: none;
+  padding-inline-start: 0;
+  border-top: 1px solid #888;
+  padding-top: 20px;
+  margin-top: 100px;
+}
+
+#contact-social-media > li {
+  padding-right: 10px;
+}
+
+hr {
+  color: #000;
+  background-color: #000;
+  height: 3px;
+  width: 50%;
+}
