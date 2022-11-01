@@ -211,6 +211,8 @@ h3 {
   float: center;
   list-style-image: linear-gradient(to right, orangered, orangered);
   text-indent: -30px;
+  padding: 0;
+  margin: 0;
 }
 
 ul.skill {
