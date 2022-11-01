@@ -13,7 +13,7 @@ body {
 #home-screen {
   max-width: 375px;
   margin: 0 auto;
-  height: 680px;
+  height: 600px;
   background-color: #1c1a19;
 }
 
@@ -35,19 +35,6 @@ a:hover {
 #navbar > a {
   text-decoration-line: none;
   color: #fff;
-}
-
-#about-me > a {
-  text-decoration-line: none;
-  color: #fff;
-  margin-top: -160px;
-  background-color: orangered;
-  width: 200px;
-  height: 45px;
-  text-align: center;
-  font-size: 22.5px;
-  font-weight: bold;
-  padding: 8px;
 }
 
 #navbar > a:hover {
@@ -79,17 +66,22 @@ h1 {
   align-items: center;
   height: 50px;
   padding-inline-start: 0;
+  list-style: none;
+}
+
+#social-media > li {
+  padding-right: 10px;
 }
 
 #main-works {
   display: grid;
-  grid-template-rows: 160px 680px 680px 680px 680px;
+  grid-template-rows: 150px 680px 680px 680px 680px;
   gap: 10px;
   max-width: 375px;
   margin: 0 auto;
   background-color: #fff;
   color: black;
-  padding: 100px 20px;
+  padding: 70px 20px;
   place-items: center;
 }
 
@@ -103,36 +95,44 @@ h2 {
 
 #heading {
   border-bottom: 1px solid grey;
+  height: 100px;
+  padding-bottom: 60px;
 }
 
 .works {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   max-width: 335px;
-  height: 680px;
-  margin: 0 auto;
+  padding: 30px 0;
 }
 
-.picture {
-  background-color: rgb(255, 107, 70);
-  object-fit: fill;
+.works > img {
+  background-color: orangered;
   padding: 20px;
-  margin: 0;
-}
-
-.picture > img {
-  width: 295px;
+  width: 100%;
   height: 260px;
-  margin: 0 auto;
+  object-fit: fill;
 }
 
 h3 {
+  width: 100%;
   font-weight: 400;
   font-size: 30px;
 }
 
+.works > h3,
+.works > p {
+  margin: 5px 0;
+}
+
+.works > p {
+  width: 100%;
+  max-height: 200px;
+}
+
 .proj-lang {
   display: flex;
-  margin-bottom: 20px;
   padding-inline-start: 0;
   list-style: none;
 }
@@ -155,31 +155,52 @@ h3 {
 }
 
 #about-me {
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   max-width: 375px;
-  height: 2000px;
-  margin: 0 auto;
+  height: 1900px;
   padding: 20px 20px;
   background-color: black;
+  margin: 0 auto;
 }
 
-#about-me > h2 {
+#resume {
+  background-image: url("./images/about-me-illus.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 450px;
+  object-fit: fill;
+}
+
+#resume > h2 {
   color: orangered;
 }
 
-#about-me > a:hover {
-  background-color: rgb(189, 50, 0);
+#resume > p {
+  height: 120px;
 }
 
-#about-me-picture {
-  float: right;
-  padding: 10px;
+#resume > a {
+  text-decoration-line: none;
+  color: #fff;
+  background-color: orangered;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-size: 19.5px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+#resume > a:hover {
+  background-color: rgb(189, 50, 0);
 }
 
 #skills {
   border-top: 1px solid grey;
-  clear: both;
   padding-top: 120px;
+  clear: both;
   text-align: center;
   font-weight: 400;
 }
@@ -187,24 +208,30 @@ h3 {
 #skills > ul {
   list-style-position: inside;
   font-size: 35px;
-  float: left;
-}
-
-.skill > li {
-  padding: 20px 0;
-}
-
-#social-media > li {
-  display: block;
-  padding-right: 10px;
-}
-
-#skills > ul > li {
-  padding: 20px 0;
+  float: center;
   list-style-image: linear-gradient(to right, orangered, orangered);
+  text-indent: -30px;
 }
 
-.skill {
+ul.skill {
   list-style: none;
   font-size: 22px;
 }
+
+ul.skill > li {
+  padding: 15px;
+}
+
+/*
+ul.prog-lang {
+  list-style-image: linear-gradient(to right, orangered, orangered);
+}
+
+ul.prog-fram {  
+  list-style-image: linear-gradient(to right, orangered, orangered);
+}
+
+ul.prog-skil{
+  list-style-image: linear-gradient(to right, orangered, orangered);
+}
+*/
