@@ -41,3 +41,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 - Figma.com
 - @Chukwuemeka
+- @Anand Mohan Pathak
