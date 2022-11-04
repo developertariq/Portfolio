@@ -9,6 +9,13 @@ body {
   background-color: #f0f5f4;
   overflow-x: hidden;
 }
+a:hover {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+input[type=submit]:hover {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
 
 a.header-menu:hover {
   background: #fff5e1;
@@ -120,7 +127,7 @@ a.view-work:hover {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  width: 350px;
+  width: 450px;
   padding-left: 24px;
 }
 
@@ -241,7 +248,6 @@ ul.skill > li {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 #top-work-view:disabled {
@@ -577,9 +583,9 @@ fieldset {
   padding-right: 15px;
 }
 
-#img-animation:hover {
+img:hover {
   transform: scale(1.1);
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s;
 }
 
 @media screen and (min-width: 768px) {
