@@ -577,9 +577,7 @@ fieldset {
 }
 
 #img-animation:hover {
-  animation-name: fadeInOut, moveLeft300px, bounce;
-  animation-duration: 2.5s, 5s, 1s;
-  animation-iteration-count: 2, 1, 5;
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {
