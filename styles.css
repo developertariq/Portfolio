@@ -8,6 +8,13 @@ body {
   color: #fff;
   font-family: 'Crete Round', Inter, 'Roboto', 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: #f0f5f4;
+  margin: 0;
+}
+
+a.header-menu:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 #view-featured-work:active {
@@ -91,6 +98,7 @@ body {
   height: 92px; 
   background-color: #3e3c3c;
   padding: 0 24px;
+  margin: 0;
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: 700;
@@ -364,10 +372,6 @@ body {
 /* ------------------------ from here ---------------------*/
 
 
-ul.skill > li {
-  padding: 15px;
-}
-
 #about-me {
   display: flex;
   flex-direction: column;
@@ -442,6 +446,10 @@ ul.skill {
   font-size: 22px;
 }
 
+ul.skill > li {
+  padding: 15px;
+}
+
 .contact-me {
   width: 375px;
   padding: 70px 20px 30px;
@@ -470,13 +478,11 @@ ul.skill {
   display: none;
 }
 
-#name::-webkit-input-placeholder::before {
-  content: "Full name";
-}
 
 form {
   width: 100%;
   padding-right: 0;
+  margin: 0 auto;
 }
 
 
@@ -487,6 +493,7 @@ fieldset {
   justify-content: flex-start;
   border: 0;
   padding: 0;
+  margin: 0 auto;
 }
 
 #name,
@@ -539,19 +546,19 @@ fieldset {
 }
 
 #contact-social-media {
-  width: 100%;
+  width: calc(100% - 5px);
   display: flex;
   justify-content: center;
   height: 50px;
   list-style: none;
   padding-inline-start: 0;
   border-top: 1px solid #888;
-  padding-top: 20px;
-  margin-top: 100px;
+  padding: 20px 0 0 0;
+  margin: 100px 0 0 0;
 }
 
 #contact-social-media > li {
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 
@@ -568,9 +575,7 @@ fieldset {
 
   .header {
     width: 100%;
-    height: 870px;
-    top: 0;
-    left: 0;
+    margin: 0 auto;
   }
 
   #menu-icon img {
@@ -586,7 +591,8 @@ fieldset {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-    padding: 0 155px;
+    padding: 0 135px;
+    margin: 0 auto;
   }
 
   .navbar ul {
@@ -613,9 +619,10 @@ fieldset {
 
   .intro {
     display: grid;
-    grid-template-columns: 130px 570px calc(100vw - 737.50px);
+    grid-template-columns: 130px 570px auto; /*calc(100vw - 740px);*/
     grid-template-rows: 315px 65px 410px;
     width: 100%;
+    margin: 0 auto;
   }
 
   #intro-greet {
@@ -652,7 +659,6 @@ fieldset {
     flex: none;
     order: 2;
     flex-grow: 0;
-    width: 566px;
   }
 
   .media-icon {
@@ -671,14 +677,15 @@ fieldset {
   }
 
   .intro-image {
-    display: flex;
     grid-row: 1 / 4;
     grid-column: 3 / 4;
+    display: flex;
     background-image: url("./images/Illustration-header.svg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: auto;
     transform: none;
+    margin: 0;
   }
 
   #recent-works {
@@ -690,6 +697,7 @@ fieldset {
     place-items: left;
     justify-content: left;
     align-items: left;
+    margin: 0 auto;
   }
   
   #work-heading {
@@ -707,13 +715,13 @@ fieldset {
     color: #1c1a19;
     border-bottom: 1px solid #999;
     height: 50px;
-    margin-top: 0;
+    margin: 0;
   }
 
   #work-heading > h2 {
     display: inline-flex;
     padding-top: 20px;
-    margin: 0 10px 0 0;
+    margin: 0;
     background-color: #fff;
   }
 
@@ -861,23 +869,27 @@ fieldset {
 
   #resume {
     display: grid;
-    grid-template-columns: 130px 470px calc(100vw - 637.50px);
+    grid-template-columns: 130px 470px calc(100vw - 640px);
     grid-template-rows:  25% 50% 25%;
     background: none;
   }
   
   #placeholder2 {
+    width: 100%;
+    margin: 0;
     grid-row: 1 / span 3;
     grid-column: 1 / span 1;
   }
 
   #placeholder3 {
+    width: 100%;
     grid-row: 1 / span 3;
     grid-column: 3 / span 1;
     background-image: url("./images/illustration-aboutme.png");
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 100%;
+    margin: 0;
   }
 
   #resume > p {
@@ -893,6 +905,7 @@ fieldset {
     display: flex;
     justify-content: space-between;
     padding: 130px;
+    width: 100%;
   }
 
   .contact-me {
@@ -950,6 +963,7 @@ fieldset {
   }
 
   .person-name {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     flex-direction: column;
