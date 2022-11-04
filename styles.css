@@ -10,6 +10,72 @@ body {
   background-color: #f0f5f4;
 }
 
+#view-featured-work:active {
+  background: #E05304;
+}
+
+#view-featured-work:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+#view-featured-work:disabled {
+  background: #f4f1f0;
+  border: none;
+  color: #5b5957;
+}
+
+#view-featured-work:enabled {
+  background: #f55800;
+  border: 1px solid #f55800;
+  color: #fff;
+}
+
+#top-work-view:active {
+  background: #E05304;
+}
+
+#top-work-view:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+#top-work-view:disabled {
+  background: #f4f1f0;
+  border: none;
+  color: #5b5957;
+}
+
+#top-work-view:enabled {
+  background: #f55800;
+  border: 1px solid #f55800;
+  color: #fff;
+}
+
+#resume > a:active {
+  background: #E05304;
+}
+
+#resume > a:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+#resume > a:disabled {
+  background: #f4f1f0;
+  border: none;
+  color: #5b5957;
+}
+
+#resume > a:enabled {
+  background: #f55800;
+  border: 1px solid #f55800;
+  color: #fff;
+}
+
 .header {
   width: 375px;
   height: 700px;
@@ -38,10 +104,6 @@ body {
 #navbar > a {
   text-decoration-line: none;
   color: #fff;
-}
-
-#navbar > a:hover {
-  background-color: #bd3200;
 }
 
 
@@ -325,10 +387,6 @@ ul.skill > li {
   object-fit: fill;
 }
 
-a:hover {
-  background-color: #bd3200;
-}
-
 #resume > a {
   text-decoration-line: none;
   color: #fff;
@@ -359,10 +417,6 @@ a:hover {
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
-}
-
-#resume > a:hover {
-  background-color: #bd3200;
 }
 
 #skills {
@@ -469,7 +523,19 @@ fieldset {
 }
 
 #submit:hover {
-  background-color: #bd3200;
+  background: #FFF5E1;
+  border: 1px solid #F55800;
+  color: #f55800;
+}
+
+#submit:active {
+  background: #F55800;
+}
+
+#submit:disabled {
+  background: #F4F1F0;
+  border: none;
+  color: #5B5957;
 }
 
 #contact-social-media {
@@ -883,7 +949,6 @@ fieldset {
     align-self: end;
   }
 
-  
   .person-name {
     display: flex;
     flex-flow: row wrap;
@@ -891,7 +956,6 @@ fieldset {
     align-items: stretch;
     height: 50px;
   }
-
 
   #email {
     display: flex;
@@ -901,7 +965,6 @@ fieldset {
     border: none;
     border-bottom: 1px solid #888;
   }
-
 
   .form-msg {
     width: 100%;
@@ -926,5 +989,4 @@ fieldset {
     margin: 0 auto;
     border: 0;
   }
-
 }
