@@ -5,9 +5,21 @@
 
 body {
   color: #fff;
-  font-family: 'Crete Round', Inter, 'Roboto', 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Crete Round', 'Inter', 'Roboto', 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: #f0f5f4;
   overflow-x: hidden;
+}
+
+a {
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+input[type=submit]:hover {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 a.header-menu:hover {
@@ -194,7 +206,7 @@ ul.skill > li {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 52px;
   color: #1c1a19;
 }
@@ -311,6 +323,11 @@ ul.skill > li {
 #top-work-pic {
   width: 100%;
   object-fit: contain;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: width 2s, height 2s, transform 2s;
 }
 
 #top-work-pic > img {
@@ -691,6 +708,7 @@ fieldset {
     flex: none;
     order: 2;
     flex-grow: 0;
+    width: 450px;
   }
 
   .media-icon {
