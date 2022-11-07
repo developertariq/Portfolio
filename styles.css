@@ -10,12 +10,12 @@ body {
   overflow-x: hidden;
 }
 
-a:hover {
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-}
-
 a {
   transition: all 0.5s ease-out;
+}
+
+a:hover {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 input[type=submit]:hover {
@@ -325,6 +325,11 @@ ul.skill > li {
   object-fit: contain;
 }
 
+img:hover {
+  transform: scale(1.1);
+  transition: width 2s, height 2s, transform 2s;
+}
+
 #top-work-pic > img {
   width: 100%;
   height: auto;
@@ -586,11 +591,6 @@ fieldset {
 
 #contact-social-media > li {
   padding-right: 15px;
-}
-
-img:hover {
-  transform: scale(1.1);
-  transition: width 2s, height 2s, transform 2s;
 }
 
 @media screen and (min-width: 768px) {
