@@ -9,8 +9,13 @@ body {
   background-color: #f0f5f4;
   overflow-x: hidden;
 }
+
 a:hover {
   transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+a {
+  transition: all 0.5s ease-out;
 }
 
 input[type=submit]:hover {
@@ -127,7 +132,7 @@ a.view-work:hover {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  width: 450px;
+  width: 350px;
   padding-left: 24px;
 }
 
@@ -201,7 +206,7 @@ ul.skill > li {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 52px;
   color: #1c1a19;
 }
@@ -703,6 +708,7 @@ img:hover {
     flex: none;
     order: 2;
     flex-grow: 0;
+    width: 450px;
   }
 
   .media-icon {
