@@ -19,7 +19,7 @@ a:hover {
 }
 
 input[type=submit]:hover {
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  transition: all 0.5s ease-out;
 }
 
 a.header-menu:hover {
@@ -326,7 +326,7 @@ ul.skill > li {
 }
 
 img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: width 2s, height 2s, transform 2s;
 }
 
