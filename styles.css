@@ -180,6 +180,13 @@ ul.skill > li {
   padding: 15px;
 }
 
+.prog-lang > li:hover,
+.prog-fram > li:hover,
+.prog-skil > li:hover,
+ul.skill > li:hover {
+  cursor: pointer;
+}
+
 #social-media > li {
   padding-right: 10px;
 }
@@ -599,11 +606,9 @@ fieldset {
   padding-right: 15px;
 }
 
-.prog-lang > li:hover,
-.prog-fram > li:hover,
-.prog-skil > li:hover,
-ul.skill > li:hover {
-  cursor: pointer;
+.fab:hover {
+  font-size: 36px;
+  transition: all 0.5s ease-out;
 }
 
 #contact-social-media > li > a > .fab {
@@ -611,7 +616,6 @@ ul.skill > li:hover {
   font-size: 24px;
 }
 
-.fab:hover,
 #contact-social-media > li > a > .fab:hover {
   font-size: 36px;
   transition: all 0.5s ease-out;
