@@ -78,11 +78,11 @@ a.view-work:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 375px;
   height: 92px;
   background-color: #3e3c3c;
   padding: 0 24px;
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
