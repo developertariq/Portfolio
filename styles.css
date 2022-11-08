@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
 }
 
+
 a {
   transition: all 0.5s ease-out;
 }
@@ -146,6 +147,11 @@ a.view-work:hover {
 
 .media-icon > li {
   padding-right: 20px;
+}
+
+.fab {
+  color: #fff;
+  font-size: 36px;
 }
 
 .intro-image {
