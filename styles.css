@@ -593,6 +593,13 @@ fieldset {
   padding-right: 15px;
 }
 
+.prog-lang > li:hover,
+.prog-fram > li:hover,
+.prog-skil > li:hover,
+ul.skill > li:hover {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
