@@ -1,13 +1,16 @@
 # Portfolio
-This project is about building a Portfolio using the mobile-first approach. This is the first step of the whole project for my portfolio. According to project requirements, we must follow one of the designs from provided templates to design the website and I have decided to follow the "Template 2" design and look from Figma.
+This project is about building a Portfolio using the mobile-first approach. This is the first step of the whole project for portfolio. To develop this website, followe "Template 2" design and look from Figma.
 
+Desktop version created according to Figma temaplate. Now, its time to deploy the website for others to view.
+### Used Github pages to deploy website.
+### The link of the website provided under Live Demo section.
 
 ## Build with
 - HTML
 - CSS
 
 ## Live Demo
-https://github.com/developertariq/Portfolio
+https://developertariq.github.io/Portfolio/
 
 
 ## Getting Started
