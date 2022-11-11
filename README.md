@@ -2,8 +2,12 @@
 This project is about building a Portfolio using the mobile-first approach. This is the first step of the whole project for portfolio. To develop this website, followe "Template 2" design and look from Figma.
 
 Desktop version created according to Figma temaplate. Now, its time to deploy the website for others to view.
-### Used Github pages to deploy website.
-### The link of the website provided under Live Demo section.
+
+- Used Github pages to deploy website.
+
+- The link of the website provided under Live Demo section.
+
+[Speech from author.](https://www.loom.com/share/7136aba14be94da1ad56a74166fdf035)
 
 ## Build with
 - HTML
