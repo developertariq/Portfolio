@@ -439,8 +439,8 @@ img:hover {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  /* display: block; */
-  /* transition: 0.3s; */
+  display: block; 
+  transition: 0.3s; 
 }
 
 #resume > a:active {
@@ -652,9 +652,8 @@ fieldset {
   left: 5px;
   background-color: #1c1a19;
   overflow-x: hidden;
-  /* transition: 0.5s; */
+  transition: 0.5s; 
   padding: 50px 24px 24px 24px;
-  /* display: none; */
 }
 
 .dropdown-menu ul {
@@ -706,9 +705,6 @@ fieldset {
   display: none;
 }
 
-.show {
-  display: block;
-}
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -1154,10 +1150,6 @@ fieldset {
     color: #fff;
     margin: 0 auto;
     border: 0;
-  }
-
-  .dropdown-menu {
-    display: none;
   }
 
   #myLinks {
