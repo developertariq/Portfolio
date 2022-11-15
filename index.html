@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Tariq's Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta 
@@ -11,7 +12,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Crete Round|Inter|Roboto|Poppins"
     />
-    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link
       rel="stylesheet"
@@ -22,14 +22,22 @@
   </head>
   <body>
     <nav id="navbar" class="navbar">
-      <a href="">Md Tariq-ul Islam</a>
-      <a id="menu-icon" href=""><i class="fa fa-bars"></i></a>
-      <ul id="menu-list">
-        <li><a class="header-menu" href="">Portfolio</a></li>
-        <li><a class="header-menu" href="">About</a></li>
-        <li><a class="header-menu" href="">Contact</a></li>
+      <a href="">Md Tariq-ul Islam</a>      
+      <div id='dropdown' class="dropdown-menu hide">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+        <ul id='mobile-menulist' onclick="closeNav()">
+          <li><a href="#recent-works">Portfolio</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </div>
+      <ul id="menu-list" >
+        <li><a class="header-menu" href="#recent-works">Portfolio</a></li>
+        <li><a class="header-menu" href="#about-me">About</a></li>
+        <li><a class="header-menu" href="#contact-me">Contact</a></li>
         <li><a class="header-menu" href=""><i class="fas fa-envelope-square"></i></a></li>
       </ul>
+      <button id="myLinks" onclick="openNav()" class="openbtn" href=""><i class="fa fa-bars"></i></button> 
     </nav>
     <header class="header">      
       <div class="intro">
@@ -194,7 +202,7 @@
         </ul>
       </div>
     </section>
-    <section class="contact-me">
+    <section id="contact-me" class="contact-me">
       <h2 id="contact-para">I'm always interested in hearing about new projects,
         so if you'd like to chat please get in touch.</h2>
       <form id="contact-me-form" action="https://formspree.io/f/meqdpjbw" method="post">
@@ -219,5 +227,6 @@
         <li><a href="https://medium.com/"><i class="fab fa-medium-m"></i></a></li>
       </ul>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
