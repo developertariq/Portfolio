@@ -645,11 +645,11 @@ fieldset {
 
 .dropdown-menu {
   position: fixed;
-  width: 100%;
+  width: 365px;
   height: 590px;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: 5px;
   background-color: #1c1a19;
   overflow-x: hidden;
   transition: 0.5s;
@@ -1147,6 +1147,10 @@ fieldset {
     color: #fff;
     margin: 0 auto;
     border: 0;
+  }
+
+  .dropdown-menu {
+    display: none;
   }
 
   #myLinks {
