@@ -1068,3 +1068,80 @@ fieldset {
     border: 0;
   }
 }
+
+.dropdown  {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1c1a19;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+.dropdown ul{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: flex-start;
+  padding-inline-start: 0;
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 24px;
+}
+
+.dropdown > ul > li {
+  width: 100%;
+  list-style: none;
+  border-bottom: 1px solid #999;
+  text-align: left;
+  margin: 15px 0;
+  text-indent: -10px;
+  height: 60px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+
+.dropdown a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.dropdown > li > a:hover {
+  color: #f1f1f1;
+}
+
+.dropdown .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+
+
