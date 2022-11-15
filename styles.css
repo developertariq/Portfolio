@@ -94,6 +94,12 @@ a.view-work:hover {
   display: none;
 }
 
+.dropdown-menu ul a:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
 #navbar > a {
   text-decoration-line: none;
   color: #fff;
@@ -174,6 +180,15 @@ a.view-work:hover {
   height: 40px;
   margin-right: 10px;
   border: 1px solid #3d3797;
+}
+
+.dropdown-menu > ul > li {
+  width: 100%;
+  list-style: none;
+  border-bottom: 1px solid #999;
+  text-align: left;
+  margin: 15px 0;
+  height: 55px;
 }
 
 ul.skill > li {
@@ -439,8 +454,8 @@ img:hover {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  display: block; 
-  transition: 0.3s; 
+  display: block;
+  transition: 0.3s;
 }
 
 #resume > a:active {
@@ -491,6 +506,17 @@ img:hover {
   text-align: center;
   font-weight: 400;
   margin: 0;
+}
+
+.dropdown-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-inline-start: 0;
+  list-style: none;
+  padding: 0 24px;
+  cursor: pointer;
 }
 
 #skills > ul {
@@ -634,15 +660,6 @@ fieldset {
   transition: all 0.5s ease-out;
 }
 
-.dropdown-menu > ul > li {
-  width: 100%;
-  list-style: none;
-  border-bottom: 1px solid #999;
-  text-align: left;
-  margin: 15px 0;
-  height: 55px;
-}
-
 .dropdown-menu {
   position: fixed;
   width: 365px;
@@ -652,25 +669,8 @@ fieldset {
   left: 5px;
   background-color: #1c1a19;
   overflow-x: hidden;
-  transition: 0.5s; 
+  transition: 0.5s;
   padding: 50px 24px 24px 24px;
-}
-
-.dropdown-menu ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-inline-start: 0;
-  list-style: none;
-  padding: 0 24px;
-  cursor: pointer;
-}
-
-.dropdown-menu ul a:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
 }
 
 .closebtn:hover {
@@ -692,7 +692,6 @@ fieldset {
   color: white;
   padding: 10px 15px;
   border: none;
-  cursor: pointer;
 }
 
 .openbtn:hover {
