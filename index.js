@@ -21,10 +21,10 @@ let works =
   },
   {
     id: 'work2',
-    name: '', 
-    description: '',
+    name: 'Data Dashboard Healthcare',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image: './images/featured.png',
-    technology: [],
+    technology: ['CSS','HTML','Bootstrap','Ruby'],
     live: 'https://developertariq.github.io/Portfolio/',
     source: 'https://github.com/developertariq/Portfolio'
   },
@@ -81,12 +81,13 @@ function showDetails(container) {
   popupWindow.classList.toggle('hide');
   fillWindow (popupWindow, container.id);
   popupWindow.style.display = 'flex-block';
+  document.targetWindow.style.mixBlendMode = 'multiply';
 } 
 
 function closeDetails() {
   document.getElementById("popup-Window").classList.remove('show-details');
   document.getElementById("popup-Window").classList.toggle('hide');
-  document.getElementById("popup-list").innerHTML='';
+  document.style.mixBlendMode = 'none';
 }
 
 function fillWindow (targetWindow, workId) {
@@ -98,7 +99,7 @@ function fillWindow (targetWindow, workId) {
   targetWindow.querySelector("#popup-image").src = work.image;
   targetWindow.querySelector("#popup-image").alt = work.name;
   let list = targetWindow.querySelector("#popup-list");
-  
+  list.innerHTML = "";
   for (let i = 0; i < work.technology.length; i++) {
     var item = document.createElement("li");
     item.appendChild(document.createTextNode(work.technology[i]));
