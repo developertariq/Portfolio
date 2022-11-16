@@ -16,8 +16,8 @@ let works =
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image: './images/Work1.png',
     technology: ['CSS','HTML','Bootstrap','Ruby'],
-    live: 'https://developertariq.github.io/Portfolio/',
-    source: 'https://github.com/developertariq/Portfolio'
+    livelink: 'https://developertariq.github.io/Portfolio/',
+    sourcelink: 'https://github.com/developertariq/Portfolio'
   },
   {
     id: 'work2',
@@ -25,8 +25,8 @@ let works =
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image: './images/featured.png',
     technology: ['CSS','HTML','Bootstrap','Ruby'],
-    live: 'https://developertariq.github.io/Portfolio/',
-    source: 'https://github.com/developertariq/Portfolio'
+    livelink: 'https://developertariq.github.io/Portfolio/',
+    sourcelink: 'https://github.com/developertariq/Portfolio'
   },
   {
     id: 'work3',
@@ -34,8 +34,8 @@ let works =
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image: './images/Work3.png',
     technology: ['HTML','Bootstrap','Ruby'],
-    live: 'https://developertariq.github.io/Portfolio/',
-    source: 'https://github.com/developertariq/Portfolio'
+    livelink: 'https://developertariq.github.io/Portfolio/',
+    sourcelink: 'https://github.com/developertariq/Portfolio'
   },
   {
     id: 'work4',
@@ -43,8 +43,8 @@ let works =
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image: './images/Work4.png',
     technology: ['HTML','Bootstrap','Ruby'],
-    live: 'https://developertariq.github.io/Portfolio/',
-    source: 'https://github.com/developertariq/Portfolio'
+    livelink: 'https://developertariq.github.io/Portfolio/',
+    sourcelink: 'https://github.com/developertariq/Portfolio'
   },
   {
     id: 'work5',
@@ -52,8 +52,8 @@ let works =
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image: './images/Work5.png',
     technology: ['HTML','Bootstrap','Ruby'],
-    live: 'https://developertariq.github.io/Portfolio/',
-    source: 'https://github.com/developertariq/Portfolio'
+    livelink: 'https://developertariq.github.io/Portfolio/',
+    sourcelink: 'https://github.com/developertariq/Portfolio'
   },
   {
     id: 'work6',
@@ -61,8 +61,8 @@ let works =
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image: './images/Work6.png',
     technology: ['HTML','Bootstrap','Ruby'],
-    live: 'https://developertariq.github.io/Portfolio/',
-    source: 'https://github.com/developertariq/Portfolio'
+    livelink: 'https://developertariq.github.io/Portfolio/',
+    sourcelink: 'https://github.com/developertariq/Portfolio'
   },
   {
     id: 'work7',
@@ -70,8 +70,8 @@ let works =
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image: './images/Work7.png',
     technology: ['HTML','Bootstrap','Ruby'],
-    live: 'https://developertariq.github.io/Portfolio/',
-    source: 'https://github.com/developertariq/Portfolio'
+    livelink: 'https://developertariq.github.io/Portfolio/',
+    sourcelink: 'https://github.com/developertariq/Portfolio'
   }
 ]
 
@@ -94,8 +94,8 @@ function fillWindow (targetWindow, workId) {
   const work = works.find(a => a.id === workId);
   targetWindow.querySelector("h3").innerText = work.name;
   targetWindow.querySelector("p").innerText = work.description;
-  targetWindow.querySelector("#see-live").href = work.live;
-  targetWindow.querySelector("#see-source").href = work.source;
+  targetWindow.querySelector("#see-live").href = work.livelink;
+  targetWindow.querySelector("#see-source").href = work.sourcelink;
   targetWindow.querySelector("#popup-image").src = work.image;
   targetWindow.querySelector("#popup-image").alt = work.name;
   let list = targetWindow.querySelector("#popup-list");
