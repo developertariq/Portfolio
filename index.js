@@ -2,100 +2,46 @@ const mobileMenu = document.getElementById("dropdown");
 
 function openNav() {
   mobileMenu.style.display= 'block';
+  mobileMenu.style.position = 'fixed';
+  document.getElementsByTagName('body').style.overflow = 'hidden';
 }
 
 function closeNav() {
   mobileMenu.style.display= 'none';
 }
 
-let works = 
-[
-  {
-    id: 'top-work',
-    name: 'Multi Post Stories', 
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image: './images/Work1.png',
-    technology: ['CSS','HTML','Bootstrap','Ruby'],
-    livelink: 'https://developertariq.github.io/Portfolio/',
-    sourcelink: 'https://github.com/developertariq/Portfolio'
-  },
-  {
-    id: 'work2',
-    name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image: './images/featured.png',
-    technology: ['CSS','HTML','Bootstrap','Ruby'],
-    livelink: 'https://developertariq.github.io/Portfolio/',
-    sourcelink: 'https://github.com/developertariq/Portfolio'
-  },
-  {
-    id: 'work3',
-    name: 'Data Dashboard Healthcare', 
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image: './images/Work3.png',
-    technology: ['HTML','Bootstrap','Ruby'],
-    livelink: 'https://developertariq.github.io/Portfolio/',
-    sourcelink: 'https://github.com/developertariq/Portfolio'
-  },
-  {
-    id: 'work4',
-    name: 'Website Portfolio', 
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image: './images/Work4.png',
-    technology: ['HTML','Bootstrap','Ruby'],
-    livelink: 'https://developertariq.github.io/Portfolio/',
-    sourcelink: 'https://github.com/developertariq/Portfolio'
-  },
-  {
-    id: 'work5',
-    name: 'Professional Art Printing Data More', 
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image: './images/Work5.png',
-    technology: ['HTML','Bootstrap','Ruby'],
-    livelink: 'https://developertariq.github.io/Portfolio/',
-    sourcelink: 'https://github.com/developertariq/Portfolio'
-  },
-  {
-    id: 'work6',
-    name: 'Data Dashboard Healthcare', 
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image: './images/Work6.png',
-    technology: ['HTML','Bootstrap','Ruby'],
-    livelink: 'https://developertariq.github.io/Portfolio/',
-    sourcelink: 'https://github.com/developertariq/Portfolio'
-  },
-  {
-    id: 'work7',
-    name: 'Website Portfolio', 
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image: './images/Work7.png',
-    technology: ['HTML','Bootstrap','Ruby'],
-    livelink: 'https://developertariq.github.io/Portfolio/',
-    sourcelink: 'https://github.com/developertariq/Portfolio'
-  }
-]
-
 function showDetails(container) {
-  const popupWindow = document.getElementById("popup-Window");
+  const popupWindow = document.getElementById("popup-window");
   popupWindow.classList.add('show-details');
-  popupWindow.classList.toggle('hide');
-  fillWindow (popupWindow, container.id);
-  popupWindow.style.display = 'flex-block';
-  document.targetWindow.style.mixBlendMode = 'multiply';
-} 
 
-function closeDetails() {
-  document.getElementById("popup-Window").classList.remove('show-details');
-  document.getElementById("popup-Window").classList.toggle('hide');
-  document.style.mixBlendMode = 'none';
+  popupWindow.innerHTML = "<div class='heading-close margin-10'>\
+  <h3 id='show-details-name' class='work-name popup-name'></h3>\
+  <span class='closebtn' onclick='closeDetails()'>&times;</span></div>\
+  <ul id='popup-list' class='technologies'></ul>\
+  <div class='popup-image-container'><img id='popup-image' src='' alt='' /></div>\
+  <p class='pop-up-description'></p>\
+  <div class='live-btn-container'>\
+  <a id='see-live' href='#' target='_blank'>See Live <i class='fas fa-external-link-alt'></i></a>\
+  <a id='see-source' href='#' target='_blank'>See Source <i class='fab fa-github'></i></a></div>";
+
+  popupWindow.classList.toggle('hide');
+  fillPopupWindow (popupWindow, container.id);
+  popupWindow.style.position = 'fixed';
 }
 
-function fillWindow (targetWindow, workId) {
+function closeDetails() {
+  document.getElementById("popup-window").classList.remove('show-details');
+  document.getElementById("popup-window").classList.toggle('hide');
+  document.getElementById("popup-window").innerHTML = '';
+}
+
+function fillPopupWindow (targetWindow, workId) {
   const work = works.find(a => a.id === workId);
   targetWindow.querySelector("h3").innerText = work.name;
   targetWindow.querySelector("p").innerText = work.description;
   targetWindow.querySelector("#see-live").href = work.livelink;
   targetWindow.querySelector("#see-source").href = work.sourcelink;
+  console.log(work.image);
   targetWindow.querySelector("#popup-image").src = work.image;
   targetWindow.querySelector("#popup-image").alt = work.name;
   let list = targetWindow.querySelector("#popup-list");
@@ -107,3 +53,51 @@ function fillWindow (targetWindow, workId) {
     list.appendChild(item);
   }
 }
+
+function fillWindow (targetWindow) {
+  const work = works.find(a => a.id === targetWindow.id);
+  targetWindow.querySelector("h3").innerText = work.name;
+  targetWindow.querySelector("p").innerText = work.description;
+  let list = targetWindow.querySelector(".proj-lang");
+  if  (list !== null) {
+    list.innerHTML = "";
+    for (let i = 0; i < work.technology.length; i++) {
+      var item = document.createElement("li");
+      item.appendChild(document.createTextNode(work.technology[i]));
+      item.classList.add("technology");
+      list.appendChild(item);
+    }
+  }
+  targetWindow.style.background = "linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(" + work.image+")";
+}
+
+function fillWindow2 (targetWindow) {
+  const work = works.find(a => a.id === targetWindow.id);
+  targetWindow.querySelector("h3").innerText = work.name;
+  targetWindow.querySelector("p").innerText = work.description;
+  targetWindow.querySelector("#img-animation").src = work.image;
+  targetWindow.querySelector("#img-animation").alt = work.name;
+  let list = targetWindow.querySelector("#top-proj-lang");
+  if  (list !== null) {
+    list.innerHTML = "";
+  
+    for (let i = 0; i < work.technology.length; i++) {
+      var item = document.createElement("li");
+      item.appendChild(document.createTextNode(work.technology[i]));
+      item.classList.add("technology");
+      list.appendChild(item);
+    }
+  }
+}
+
+function loadRecentWorks () {
+  for(let i = 0; i < works.length; i++) {
+    if (i === 0) {
+      document.getElementById(works[i].id).addEventListener("load", fillWindow2(document.getElementById(works[i].id)));
+    }
+    else {
+      document.getElementById(works[i].id).addEventListener("load", fillWindow(document.getElementById(works[i].id)));
+    }
+  }
+}
+  
