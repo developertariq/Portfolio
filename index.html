@@ -22,7 +22,7 @@
   </head>
   <body>
     <nav id="navbar" class="navbar">
-      <a href="">Md Tariq-ul Islam</a>      
+      <a href="#">Md Tariq-ul Islam</a>      
       <div id='dropdown' class="dropdown-menu hide">
         <span class="closebtn" onclick="closeNav()">&times;</span>
         <ul id='mobile-menulist' onclick="closeNav()">
@@ -37,7 +37,7 @@
         <li><a class="header-menu" href="#contact-me">Contact</a></li>
         <li><a class="header-menu" href=""><i class="fas fa-envelope-square"></i></a></li>
       </ul>
-      <button id="myLinks" onclick="openNav()" class="openbtn" href=""><i class="fa fa-bars"></i></button> 
+      <button id="myLinks" onclick="openNav()" class="openbtn"><i class="fa fa-bars"></i></button> 
     </nav>
     <header class="header">      
       <div class="intro">
@@ -57,11 +57,25 @@
       </div>
     </header>
     <section id="recent-works">
+      <div id="popup-Window" class="hide">
+        <div class="live-btn-container margin-10">
+          <h3 id="show-details-name" class="work-name popup-name"></h3>
+          <span class="closebtn" onclick="closeDetails()">&times;</span>
+        </div>
+        <ul id="popup-list" class="technologies">
+        </ul>
+        <div class="popup-image-container"><img id="popup-image" src="./images/work1.png" alt="" /></div>
+        <p class="pop-up-description"></p>
+        <div class="live-btn-container">
+          <a id="see-live" href="#" target="_blank">See Live <i class='fas fa-external-link-alt'></i></a>
+          <a id="see-source" href="#" target="_blank">See Source <i class='fab fa-github'></i></a>
+        </div>
+      </div>
       <div id="work-heading">
         <h2>My Recent Works</h2>
       </div>
-      <article id="top-work">
-        <div id="top-work-pic"><img id="img-animation" src="./images/Work1.png" alt="My first Work sample"></div>
+      <article id="top-work" name="top-work">
+        <div class="top-work-pic"><img id="img-animation" src="./images/Work1.png" alt="My first Work sample"></div>
         <div id="top-work-details">
           <h3 class="work-name">Multi Post Stories</h3>
           <p class="description">
@@ -75,11 +89,11 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <a id="top-work-view" href="#">See Project</a>
+          <a href= "#" id="top-work-view" onclick="showDetails(this.parentElement.parentElement)">See Project</a>
         </div>
       </article>
-      <article class="feature-work">
-        <a id="view-featured-work" href="">See Project</a>
+      <article id="work2" class="feature-work">
+        <a id="view-featured-work" href="#">See Project</a>
       </article>
       <article id="work3" class="other-works">
         <div></div>
@@ -94,7 +108,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <a class="view-work" href="">See Project</a>
+        <a id="work-3" class="view-work" href="#" onclick="showDetails(this.parentElement)">See Project</a>
       </article>
       <article id="work4" class="other-works">
         <h3 class="work-name">Website Portfolio</h3>
@@ -108,7 +122,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <a class="view-work" href="">See Project</a>
+        <a id="work-4" class="view-work" href="#" onclick="showDetails(this.parentElement)">See Project</a>
       </article>
       <article id="work5" class="other-works">
         <div class="optional"></div>
@@ -123,7 +137,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <a class="view-work" href="">See Project</a>
+        <a id="work-5" class="view-work" href="#" onclick="showDetails(this.parentElement)">See Project</a>
       </article>
       <article id="work6" class="other-works">
         <div class="optional"></div>
@@ -138,7 +152,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <a class="view-work" href="">See Project</a>
+        <a id="work-6" class="view-work" href="#" onclick="showDetails(this.parentElement)">See Project</a>
       </article>
       <article id="work7" class="other-works">
         <div class="optional"></div>
@@ -153,7 +167,7 @@
           <li>Bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <a class="view-work" href="">See Project</a>
+        <a id="work-7" class="view-work" href="#" onclick="showDetails(this.parentElement)">See Project</a>
       </article>
     </section>
     <section id="about-me">
