@@ -4,7 +4,7 @@ let works =
     id: 'top-work',
     name: 'Multi Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image: './images/work1.png',
+    image: './images/Work1.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     technology: ['CSS','HTML','Bootstrap','Ruby'],
     livelink: 'https://developertariq.github.io/Portfolio/',
