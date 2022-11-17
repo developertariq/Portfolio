@@ -707,7 +707,7 @@ fieldset {
   width: 343px;
   height: 718px;
   left: calc(50% - 343px / 2);
-  top: 60px;
+  top: 30px;
   z-index: 9;
   background-color: #fff;
   border: 1px solid #dfe1e6;
@@ -715,14 +715,32 @@ fieldset {
   transition: 0.5s;
 }
 
-.show-details .closebtn {
-  color: #000;
-  text-align: right;
+.show-details .closebtn{
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  justify-content: center;
+  align-content: flex-end;
+  padding: 0;
+  margin: -5px;
   position: relative;
+  box-shadow: none;
+  border: none;
+  background-color: inherit;
+}
+
+.closebtn .fas {
+  color: #000;
+  font-size: 24px;
 }
 
 .popup-name {
-  width: 325px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  width: 90%;
   height: 75px;
 }
 
@@ -731,6 +749,7 @@ fieldset {
   display: flex;
   justify-content: space-between;
   align-self: flex-start;
+  color: #000;
 }
 
 .live-btn-container {
@@ -774,6 +793,7 @@ fieldset {
   flex-grow: 0;
   height: 40px;
   border: 1px solid #3d3797;
+  color: #344563;;
 }
 
 .pop-up-description {
@@ -792,10 +812,14 @@ fieldset {
   background-color: #1c1a19;
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: absolute;
+
+  /* position: fixed; */
   top: 0;
   left: 0;
+
   /* opacity: 0.9; */
+
   /* mix-blend-mode: multiply; */
   backdrop-filter: blur(10px);
 }
