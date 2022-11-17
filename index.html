@@ -157,18 +157,17 @@
     <section id="contact-me" class="contact-me">
       <h2 id="contact-para">I'm always interested in hearing about new projects,
         so if you'd like to chat please get in touch.</h2>
-      <form id="contact-me-form" action="https://formspree.io/f/meqdpjbw" method="post">
+      <form id="contact-me-form" action="https://formspree.io/f/meqdpjbw" target="_blank" method="post">
         <fieldset>
           <div class="person-name">
-            <input type="text" id="firstname" name="firstname" maxlength="30" required
-              placeholder="First Name" />
-            <input type="text" id="lastname" name="lastname" maxlength="30" placeholder="Last Name" required />
-          </div>
-          <input type="text" id="name" name="fullname" maxlength="30" required placeholder="Full name" />
-          <input type="email" id="email" name="email" placeholder="Email address" required />
-          <textarea id="msg" class="form-msg" name="msg" maxlength="500" required>Enter text here
-            </textarea>
-          <input type="submit" id="submit" value="Get in touch">
+            <input type="text" id="firstname" name="firstname" maxlength="30" placeholder="First name" />
+            <input type="text" id="lastname" name="lastname" maxlength="30" placeholder="Last name"  />
+          </div>          
+          <input type="text" id="name" name="fullname" maxlength="30" placeholder="Full name" />          
+          <input type="email" id="email" name="email" placeholder="Email address" />          
+          <textarea id="msg" class="form-msg" name="msg" maxlength="500" >Enter text here</textarea>
+          <small></small>
+          <input type="submit" id="submitbtn" value="Get in touch"> 
         </fieldset>
       </form>
       <ul id="contact-social-media">
@@ -179,6 +178,7 @@
         <li><a href="https://medium.com/"><i class="fab fa-medium-m"></i></a></li>
       </ul>
     </section>
+    <script src="validation.js"></script>
     <script src="./projectdata.js"></script>
     <script src="./index.js"></script>
   </body>
