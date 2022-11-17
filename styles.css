@@ -704,6 +704,37 @@ fieldset {
   display: none;
 }
 
+.error {
+  color: #dc3545;
+}
+
+small {
+  color: #dc3545;
+}
+
+input.error,
+textarea.error,
+select.error {
+  border-color: #dc3545;
+}
+
+input.error:focus,
+textarea.error:focus,
+select.error:focus {
+  box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 25%);
+}
+
+input.success,
+textarea.success,
+select.success {
+  border-color: #198754;
+}
+
+input.success:focus,
+textarea.success:focus {
+  box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 25%);
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -1163,34 +1194,4 @@ fieldset {
   #myLinks {
     display: none;
   }
-}
-
-.error {
-	color: #dc3545;
-}
-
-small {
-	color: #dc3545;
-}
-input.error,
-textarea.error,
-select.error {
-	border-color: #dc3545;
-}
-
-input.error:focus,
-textarea.error:focus,
-select.error:focus {
-	box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 25%);
-}
-
-input.success,
-textarea.success,
-select.success {
-	border-color: #198754;
-}
-
-input.success:focus,
-textarea.success:focus {
-	box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 25%);
 }
