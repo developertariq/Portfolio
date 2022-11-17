@@ -715,7 +715,7 @@ fieldset {
   transition: 0.5s;
 }
 
-.show-details .closebtn{
+.show-details .closebtn {
   width: 36px;
   height: 36px;
   text-align: center;
@@ -793,7 +793,7 @@ fieldset {
   flex-grow: 0;
   height: 40px;
   border: 1px solid #3d3797;
-  color: #344563;;
+  color: #344563;
 }
 
 .pop-up-description {
