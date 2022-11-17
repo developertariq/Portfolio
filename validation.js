@@ -3,7 +3,6 @@ function showMessage(input, message, type) {
 	const msg = input.parentElement.querySelector("small");
 	msg.innerText = message;
 	input.className = type ? "success" : "error";
-  console.log(type, input);
 	return type;
 }
 
@@ -27,7 +26,7 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 		return false;
 	}
 
-	const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
 
 	const email = input.value.trim();
 	if (!emailRegex.test(email)) {
@@ -45,10 +44,8 @@ form.addEventListener("submit", function (event) {
 	event.preventDefault();
 	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
 
-  console.log(emailValid);
-
 	if (emailValid) {
-    //form.submit();
+    
 	}
 });
 
