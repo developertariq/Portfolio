@@ -600,30 +600,31 @@ fieldset {
   background-color: #fbf8f7;
 }
 
-#submit {
+#submitbtn {
   background-color: #f55800;
   font-weight: bold;
   width: 125px;
   height: 40px;
   text-align: center;
   text-decoration-line: none;
+  align-self: flex-start;
   padding: 10px;
   color: #fff;
-  margin: 0 auto;
+  margin-top: 30px;
   border: 0;
 }
 
-#submit:hover {
+#submitbtn:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
 }
 
-#submit:active {
+#submitbtn:active {
   background: #f55800;
 }
 
-#submit:disabled {
+#submitbtn:disabled {
   background: #f4f1f0;
   border: none;
   color: #5b5957;
@@ -713,20 +714,17 @@ small {
 }
 
 input.error,
-textarea.error,
-select.error {
+textarea.error {
   border-color: #dc3545;
 }
 
 input.error:focus,
-textarea.error:focus,
-select.error:focus {
+textarea.error:focus {
   box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 25%);
 }
 
 input.success,
-textarea.success,
-select.success {
+textarea.success {
   border-color: #198754;
 }
 
@@ -1178,16 +1176,17 @@ textarea.success:focus {
     background-color: #fbf8f7;
   }
 
-  #submit {
+  #submitbtn {
     background-color: #f55800;
     font-weight: bold;
     width: 125px;
     height: 40px;
     text-align: center;
+    align-self: flex-start;
     text-decoration-line: none;
     padding: 10px;
     color: #fff;
-    margin: 0;
+    margin-top: 30px;
     border: 0;
   }
 
