@@ -208,15 +208,17 @@
       <form id="contact-me-form" action="https://formspree.io/f/meqdpjbw" method="post">
         <fieldset>
           <div class="person-name">
-            <input type="text" id="firstname" name="firstname" maxlength="30" required
-              placeholder="First Name" />
-            <input type="text" id="lastname" name="lastname" maxlength="30" placeholder="Last Name" required />
+            <input type="text" id="firstname" name="firstname" maxlength="30" required placeholder="First Name" />
+            <input type="text" id="lastname" name="lastname" maxlength="30" required placeholder="Last Name"  />
           </div>
-          <input type="text" id="name" name="fullname" maxlength="30" required placeholder="Full name" />
+          
+          <input type="text" id="name" name="fullname" maxlength="30" placeholder="Full name" />
+          
           <input type="email" id="email" name="email" placeholder="Email address" required />
-          <textarea id="msg" class="form-msg" name="msg" maxlength="500" required>Enter text here
-            </textarea>
-          <input type="submit" id="submit" value="Get in touch">
+          
+          <textarea id="msg" class="form-msg" name="msg" maxlength="500" required>Enter text here</textarea>
+          <small></small>
+          <input type="submit" id="submit" value="Get in touch"> 
         </fieldset>
       </form>
       <ul id="contact-social-media">
@@ -227,6 +229,7 @@
         <li><a href="https://medium.com/"><i class="fab fa-medium-m"></i></a></li>
       </ul>
     </section>
+    <script src="validation.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
