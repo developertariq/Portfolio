@@ -788,6 +788,18 @@ fieldset {
   text-align: justify;
 }
 
+.popupOverlay {
+  background-color: #1c1a19;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* opacity: 0.9; */
+  /* mix-blend-mode: multiply; */
+  backdrop-filter: blur(10px);
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -1245,6 +1257,7 @@ fieldset {
   }
 
   .show-details {
+    position: absolute;
     display: grid;
     grid-template-rows: 8% 8% auto 12%;
     grid-template-columns: 62% auto;

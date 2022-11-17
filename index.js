@@ -27,11 +27,13 @@ function showDetails(container) {
 
   popupWindow.classList.toggle('hide');
   fillPopupWindow (popupWindow, container.id);
+  overlay.classList.toggle('hide');
 }
 
 function closeDetails() {
   document.getElementById("popup-window").classList.remove('show-details');
   document.getElementById("popup-window").classList.toggle('hide');
+  overlay.classList.toggle('hide');
 }
 
 function fillPopupWindow (targetWindow, workId) {
@@ -99,3 +101,8 @@ function loadRecentWorks () {
   }
 }
   
+const overlay = document.createElement('div');
+overlay.classList.add('popupOverlay');
+overlay.classList.add('hide');
+document.querySelector('body').appendChild(overlay);
+overlay.appendChild(document.querySelector('#popup-window'))
