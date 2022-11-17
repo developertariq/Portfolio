@@ -1,4 +1,4 @@
-let works = 
+const works = 
 [
   {
     id: 'top-work',
@@ -64,4 +64,4 @@ let works =
     livelink: 'https://developertariq.github.io/Portfolio/',
     sourcelink: 'https://github.com/developertariq/Portfolio'
   }
-]
+];

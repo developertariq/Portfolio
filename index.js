@@ -1,3 +1,4 @@
+
 const mobileMenu = document.getElementById("dropdown");
 
 function openNav() {
@@ -11,7 +12,7 @@ function closeNav() {
 }
 
 function showDetails(container) {
-  const popupWindow = document.getElementById("popup-window");
+  const popupWindow = document.querySelector("#popup-window");
   popupWindow.classList.add('show-details');
 
   popupWindow.innerHTML = "<div class='heading-close margin-10'>\
@@ -26,13 +27,11 @@ function showDetails(container) {
 
   popupWindow.classList.toggle('hide');
   fillPopupWindow (popupWindow, container.id);
-  popupWindow.style.position = 'fixed';
 }
 
 function closeDetails() {
   document.getElementById("popup-window").classList.remove('show-details');
   document.getElementById("popup-window").classList.toggle('hide');
-  document.getElementById("popup-window").innerHTML = '';
 }
 
 function fillPopupWindow (targetWindow, workId) {
@@ -41,7 +40,6 @@ function fillPopupWindow (targetWindow, workId) {
   targetWindow.querySelector("p").innerText = work.description;
   targetWindow.querySelector("#see-live").href = work.livelink;
   targetWindow.querySelector("#see-source").href = work.sourcelink;
-  console.log(work.image);
   targetWindow.querySelector("#popup-image").src = work.image;
   targetWindow.querySelector("#popup-image").alt = work.name;
   let list = targetWindow.querySelector("#popup-list");
