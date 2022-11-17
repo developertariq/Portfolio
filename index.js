@@ -47,10 +47,7 @@ function fillWindow (targetWindow) {
   const work = works.find(a => a.id === targetWindow.id);
   targetWindow.querySelector("h3").innerText = work.name;
   targetWindow.querySelector("p").innerText = work.description;
-  const a = targetWindow.querySelector('a');
-  if (targetWindow.id !== 'work2'){
-    a.classList.add('hide');
-  }
+  
   let list = targetWindow.querySelector(".proj-lang");
   if  (list !== null) {
     list.innerHTML = "";

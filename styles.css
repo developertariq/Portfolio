@@ -359,6 +359,7 @@ ul.skill > li:hover {
   text-decoration-line: none;
   padding: 10px;
   color: #fff;
+  display: block;
 }
 
 .top-work-pic {
@@ -1058,6 +1059,19 @@ fieldset {
     height: 475px;
   }
 
+  .feature-work-link {
+    background-color: #f55800;
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 16px);
+    height: 40px;
+    text-align: center;
+    text-decoration-line: none;
+    padding: 10px;
+    color: #fff;
+    display: block;
+  }
+
   .other-works {
     display: flex;
     flex-direction: column;
@@ -1354,5 +1368,9 @@ fieldset {
     justify-content: start;
     align-self: flex-end;
     margin-bottom: 0;
+  }
+
+  .view-work {
+    display: none;
   }
 }
