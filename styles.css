@@ -982,7 +982,7 @@ textarea.success:focus {
     display: flex;
     background-image: url("./images/Illustration-header.svg");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: right;
     background-size: auto;
     transform: none;
     margin: 0;
