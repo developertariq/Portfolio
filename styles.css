@@ -655,7 +655,7 @@ fieldset {
   bottom: 57px;
   width: 375px;
   height: 755px;
-  z-index: 9999;
+  z-index: 99;
   background-color: #3c3a39;
   overflow-x: hidden;
   transition: 0.5s;
