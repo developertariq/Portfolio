@@ -83,6 +83,7 @@ function fillWindow2(targetWindow) {
 window.addEventListener('load', () => {
   createPopupWindow();
   loadRecentWorks();
+
 });
 
 function loadRecentWorks() {
@@ -163,6 +164,7 @@ function createPopupWindow() {
 }
 
 const overlay = document.createElement('div');
+
 function lockBack() {
   overlay.classList.add('popupOverlay');
   overlay.classList.add('hide');
