@@ -1,3 +1,10 @@
+const form = document.querySelector('#contact-me-form');
+const FULLNAME_REQUIRED = 'Please enter your full name.';
+const FIRSTNAME_REQUIRED = 'Please enter your first name.';
+const LASTNAME_REQUIRED = 'Please enter your last name.';
+const EMAIL_REQUIRED = 'Please enter your email address.';
+const EMAIL_INVALID = 'Please enter a correct email address format.';
+
 function showMessage(input, message, type) {
   const msg = document.querySelector('small');
   msg.innerText = message;
@@ -34,18 +41,12 @@ function validateEmail(input, requiredMsg, invalidMsg) {
   return true;
 }
 
-const form = document.querySelector('#contact-me-form');
-const FULLNAME_REQUIRED = 'Please enter your full name.';
-const FIRSTNAME_REQUIRED = 'Please enter your first name.';
-const LASTNAME_REQUIRED = 'Please enter your last name.';
-const EMAIL_REQUIRED = 'Please enter your email address.';
-const EMAIL_INVALID = 'Please enter a correct email address format.';
-
 function clearField() {
   form.elements.firstname.value = '';
   form.elements.lastname.value = '';
   form.elements.name.value = '';
   form.elements.email.value = '';
+  form.elements.msg.value = '';
 }
 
 form.addEventListener('submit', (event) => {
