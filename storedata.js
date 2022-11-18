@@ -1,3 +1,4 @@
+
 if(!localStorage.getItem('email')) {
   storeData();
 } else {
@@ -5,11 +6,11 @@ if(!localStorage.getItem('email')) {
 }
 
 function storeData() {
-  localStorage.setItem('firstname', document.getElementById('firstname').value);
-  localStorage.setItem('lastname', document.getElementById('lastname').value);
-  localStorage.setItem('fullname', document.getElementById('name').value);
-  localStorage.setItem('email', document.getElementById('email').value);
-  localStorage.setItem('msg', document.getElementById('msg').value);
+  localStorage.setItem('firstname', JSON.stringify(document.getElementById('firstname').value));
+  localStorage.setItem('lastname', JSON.stringify(document.getElementById('lastname').value));
+  localStorage.setItem('fullname', JSON.stringify(document.getElementById('name').value));
+  localStorage.setItem('email', JSON.stringify(document.getElementById('email').value));
+  localStorage.setItem('msg', JSON.stringify(document.getElementById('msg').value));
   
   displayData();
 }
