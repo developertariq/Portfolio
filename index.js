@@ -83,6 +83,7 @@ function fillWindow2(targetWindow) {
 window.addEventListener('load', () => {
   createPopupWindow();
   loadRecentWorks();
+
 });
 
 function loadRecentWorks() {

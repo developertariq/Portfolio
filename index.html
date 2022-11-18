@@ -160,7 +160,7 @@
       <form id="contact-me-form" action="https://formspree.io/f/meqdpjbw" target="_blank" method="post">
         <fieldset>
           <div class="person-name">
-            <input type="text" id="firstname" name="firstname" maxlength="30" placeholder="First name" />
+            <input type="text" id="firstname" name="firstname" maxlength="30" placeholder="First name" onchange='storeData()' />
             <input type="text" id="lastname" name="lastname" maxlength="30" placeholder="Last name"  />
           </div>          
           <input type="text" id="name" name="fullname" maxlength="30" placeholder="Full name" />          
@@ -178,6 +178,7 @@
         <li><a href="https://medium.com/"><i class="fab fa-medium-m"></i></a></li>
       </ul>
     </section>
+    <script src="./storedata.js"></script>
     <script src="./validation.js"></script>
     <script src="./projectdata.js"></script>
     <script src="./index.js"></script>
